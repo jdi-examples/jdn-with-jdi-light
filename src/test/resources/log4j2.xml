@@ -27,9 +27,9 @@
     </Console>
 
     <RollingFile name="fileAppender" fileName="${baseDir}/${logFileName}.log">
-      <FilePattern>${baseDir}/${logFileName}_%d{yyyy-MM-dd_HH-mm}_%i.log</FilePattern>
+      <FilePattern>${baseDir}/${logFileName}_%d{yyyy-MM-dd__HH-mm}_%i.log</FilePattern>
       <PatternLayout>
-        <Pattern>%d{HH:mm:ss}[%-level] - %msg%n</Pattern>
+        <Pattern>%d{HH:mm:ss} [%t] %-5level %logger{6} - %msg%n</Pattern>
       </PatternLayout>
 
       <Policies>

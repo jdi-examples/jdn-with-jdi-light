@@ -10,6 +10,9 @@ public class TestData {
     } );
 
     public static Contacts DEFAULT_CONTACTS = new Contacts().set(c -> {
+        c.gender = "Male";
+        //c.religion = "Other";
+        c.weather = "Sun, Snow";
         c.passport = "true";
         c.acceptConditions = null;
         c.name = "Roman";
@@ -19,4 +22,5 @@ public class TestData {
         c.passportSeria = "123456";
         c.description = "JDI awesome";
     } );
+
 }
