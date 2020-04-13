@@ -2,8 +2,8 @@ package io.github.epam.tests.example;
 
 import org.testng.annotations.Test;
 
-import static io.github.epam.EpamGithubSite.*;
-import static io.github.epam.tests.example.data.Navigation.ContactForm;
+import static io.github.jditesting.JdiTestingGithubSite.*;
+import static io.github.epam.tests.example.data.Navigation.*;
 import static io.github.epam.tests.example.data.TestData.*;
 
 public class SimpleTest extends SimpleTestsInit {

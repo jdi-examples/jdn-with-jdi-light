@@ -1,18 +1,18 @@
 package io.github.epam.tests.example.data;
 
-import io.github.epam.entities.Contacts;
-import io.github.epam.entities.Logins;
+import io.github.jditesting.entities.Contacts;
+import io.github.jditesting.entities.Logins;
 
 public class TestData {
     public static Logins DEFAULT_USER = new Logins().set(u -> {
-        u.name = "epam";
-        u.password = "1234";
+        u.name = "Roman";
+        u.password = "Jdi1234";
     } );
 
     public static Contacts DEFAULT_CONTACTS = new Contacts().set(c -> {
         c.gender = "Male";
         //c.religion = "Other";
-        c.weather = "Sun, Snow";
+        //c.weather = "Sun, Snow";
         c.passport = "true";
         c.acceptConditions = null;
         c.name = "Roman";
