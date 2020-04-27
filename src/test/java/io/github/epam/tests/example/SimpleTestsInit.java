@@ -10,16 +10,16 @@ import static com.epam.jdi.light.logger.LogLevels.*;
 import static com.epam.jdi.light.settings.WebSettings.*;
 
 
-public class SimpleTestsInit {
+public interface SimpleTestsInit {
     @BeforeSuite(alwaysRun = true)
-    public static void setUp() {
+    default void setUp() {
         logger.setLogLevel(STEP);
         initSite(JdiTestingGithubSite.class);
         logger.info("Run Tests");
     }
 
     @AfterSuite(alwaysRun = true)
-    public static void tearDown() {
+    default void tearDown() {
         killAllSeleniumDrivers();
     }
 }

@@ -6,7 +6,7 @@ import static io.github.jditesting.JdiTestingGithubSite.*;
 import static io.github.epam.tests.example.data.Navigation.*;
 import static io.github.epam.tests.example.data.TestData.*;
 
-public class SimpleTest extends SimpleTestsInit {
+public class SimpleTest implements SimpleTestsInit {
     @Test
     public void loginTest() {
         homePage.open();
