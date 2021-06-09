@@ -15,7 +15,7 @@ public class TestData {
         //c.weather = "Sun, Snow";
         c.passport = "true";
         c.acceptConditions = null;
-        c.name = "Roman";
+        c.firstName = "Roman";
         c.lastName = "Iovlev";
         c.position = "QA Automation";
         c.passportNumber = "4321";
